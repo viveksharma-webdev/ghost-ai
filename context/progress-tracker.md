@@ -4,7 +4,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Editor chrome foundation complete
+- Authentication foundation complete
 
 ## Current Goal
 
@@ -19,6 +19,11 @@ Update this file whenever the current phase, active feature, or implementation s
 - Editor: added floating project sidebar shell with project tabs, empty states, and a new-project action.
 - Editor: composed the navbar and sidebar directly in the editor route with page-owned sidebar state.
 - Editor: confirmed the existing token-backed shadcn dialog pattern supports titles, descriptions, and footer actions for future dialogs.
+- Authentication: integrated Clerk's dark theme and application token-backed appearance through the root provider.
+- Authentication: added protected-first route handling in `proxy.ts`, with sign-in and sign-up paths as the only public routes.
+- Authentication: added responsive, minimal Clerk sign-in and sign-up pages while retaining Clerk's built-in flows.
+- Authentication: redirect the root route to the editor for authenticated users and to sign-in otherwise.
+- Authentication: added Clerk's built-in user menu to the editor navbar.
 
 ## In Progress
 
@@ -26,7 +31,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Next Up
 
-- Implement the next editor feature specification.
+- Implement the next feature specification.
 
 ## Open Questions
 
@@ -38,4 +43,4 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Session Notes
 
-- Type checking, linting, production build, and the `cn()` merge behavior check all pass.
+- Type checking, linting, and the production build pass after the Clerk authentication integration.
